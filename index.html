@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <title>Jogo da forca</title>
+</head>
+<body>
+  <div class="containere">
+    <h1 class="text-centro">Jogo da Forca</h1>
+    <div class="float-direita">Erros: <span id='erros'>0</span> of <span id='toleranciaErros'></span></div>
+    <div class="text-centro">
+      
+      <canvas id="hangman" width="180" height="250"></canvas>
+
+      <p id="charada">Vamos começar</p>
+      <p id="marcacao">
+        <button class="button button-info" onclick="iniciar()">Iniciar jogo</button>
+      </p>
+      <div id="keyboard"></div>
+      <button class="button button-info" onClick="reset()">Reset</button>
+    </div> 
+  </div>
+
+  <script src='./javascript/index.js'></script>
+</body>
+</html>
